@@ -21,7 +21,7 @@ nav {
 	margin: auto;
 	width: 90%;
 	display: flex;
-	align-content: center;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -30,6 +30,48 @@ nav h1, nav ul{
 	flex: 1;
 	
 }
- ul{
- 	flex: 1;
+nav ul {
+ 	list-style: none;
+ 	display: flex;
+ 	justify-content: space-between;
  }
+
+nav a {
+ 	color: black;
+ 	text-decoration: none;
+ 	cursor: pointer;
+ }
+
+section {
+ 	min-height: 100vh;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+section h2 {
+ 	font-size: 5rem;
+ 	color: white;
+ }
+
+
+.home {
+	background: linear-gradient(to right top, #f46b45, #eea849);
+}
+
+.project {
+	background: linear-gradient(to right top, #005c97, #363795);
+}
+
+.contact {
+	background: linear-gradient(to right top, #e53935, #e35d5b);
+}
+
+.bubble {
+	z-index: -2;
+	position: absolute;
+	background: linear-gradient(to right top, #f46b45, #eea849);
+	transform: scale(2);
+	transition: all 0.5s ease;
+
+}
